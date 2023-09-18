@@ -7,7 +7,6 @@
   <a href="LICENSE"><img  src="https://img.shields.io/static/v1?label=License&message=MIT&color=8257e5&labelColor=202024" alt="License"></a>
 </p>
 
-
 ## 💻 Projeto
 
 igniteshoesapp
@@ -22,7 +21,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
   Feito com 💜 by Rocketseat
 </p>
 
-
 <!--START_SECTION:footer-->
 
 <br />
@@ -36,3 +34,28 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 <!--END_SECTION:footer-->
 
+<br />
+
+---
+
+## Run app
+
+To run with a physical device
+
+```bash
+  adb devices
+```
+
+```bash
+  adb tcpip 5555
+```
+
+```bash
+  adb connect deviceip:5555
+```
+
+## Install app on device and run
+
+```bash
+  npx expo run:android
+```
