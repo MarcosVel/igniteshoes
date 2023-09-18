@@ -54,8 +54,14 @@ To run with a physical device
   adb connect deviceip:5555
 ```
 
-## Install app on device and run
+## Install app on device and run (without expo-dev-clint)
 
 ```bash
   npx expo run:android
+```
+
+## Run with expo-dev-clint
+
+```bash
+  npx expo start --dev-client
 ```
