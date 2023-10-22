@@ -14,11 +14,21 @@ import { Loading } from "./src/components/Loading";
 import { THEME } from "./src/theme";
 
 import { CartContextProvider } from "./src/contexts/CartContext";
+import { useEffect } from "react";
 
 OneSignal.setAppId(ONESIGNAL_APP_ID);
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
+
+  useEffect(() => {
+    const unsubscribe = OneSignal.setNotificationOpenedHandler((data) => {
+      console.log("Notification opened");
+      console.log(data);
+    });
+
+    return () => unsubscribe;
+  }, []);
 
   return (
     <NativeBaseProvider theme={THEME}>
