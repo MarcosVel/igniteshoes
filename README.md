@@ -65,3 +65,15 @@ To run with a physical device
 ```bash
   npx expo start --dev-client
 ```
+
+## List schemes
+
+```bash
+  npx uri-scheme list
+```
+
+run test on android
+
+```bash
+  npx uri-scheme open igniteshoes://<deviceip>:8081 --android
+```

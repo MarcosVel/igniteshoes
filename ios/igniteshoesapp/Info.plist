@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>igniteshoesapp</string>
+    <string>igniteshoes</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -25,7 +25,14 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
+          <string>igniteshoes</string>
           <string>com.igniteshoes</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>exp+igniteshoes</string>
         </array>
       </dict>
     </array>
