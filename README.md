@@ -77,3 +77,9 @@ run test on android
 ```bash
   npx uri-scheme open igniteshoes://<deviceip>:8081 --android
 ```
+
+testing navigation to product
+
+```bash
+  npx uri-scheme open igniteshoes://details/7 --android
+```
